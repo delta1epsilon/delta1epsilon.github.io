@@ -1,18 +1,18 @@
 # Site settings
-title: Jekyll-Uno
-description: 'Jekyll-Uno - a minimal, responsive theme for Jekyll'
-url: 'http://joshgerdes.com/jekyll-uno'
-baseurl: '/jekyll-uno/'
+title: Ihor Kovalyshyn
+description: 'Data Science Engineer'
+url: ''
+baseurl: '/home/'
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 
 author:
-  name: 'Josh Gerdes'
-  email: josh@joshgerdes.com
-  twitter_username: joshgerdes
-  facebook_username: joshgerdes
-  github_username:  joshgerdes
-  linkedin_username:  joshgerdes
+  name: 'Ihor Kovalyshyn'
+  email: ihorko.kovalyshyn@gmail.com
+  twitter_username:
+  facebook_username:
+  github_username:  delta1epsilon
+  linkedin_username:
 
 defaults:
   -

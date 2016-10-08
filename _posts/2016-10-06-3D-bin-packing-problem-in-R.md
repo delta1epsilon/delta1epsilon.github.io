@@ -1,5 +1,4 @@
 ---
-comments: true
 title:  "3D bin packing problem in R"
 date:   2016-10-06 15:04:23
 categories: [R, 3D bin packing problem, Genetic Algorithm]

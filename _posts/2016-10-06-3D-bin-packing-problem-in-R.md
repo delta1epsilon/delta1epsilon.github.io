@@ -26,7 +26,7 @@ We start with initializing a population of `n` chromosomes (suitable solutions f
 
 In next step each chromosome is being mapped into a packing solution. A concept of empty maximal spaces (EMS) is used to represent free space in containers. Essentially, EMS is a list of largest empty cubic space available for packing not contained in any other EMS. EMS are represented with their maximum and minimum coordinates. EMS is displayed in picture below.
 
-![](http://localhost:4000/home/assets/ems_plot.png)
+![](http://delta1epsilon.github.io/assets/ems_plot.png)
 
 [Figure source](https://www.researchgate.net/publication/273121476_A_genetic_algorithm_for_the_three-dimensional_bin_packing_problem_with_heterogeneous_bins)
 

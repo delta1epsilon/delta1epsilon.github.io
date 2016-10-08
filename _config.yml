@@ -1,8 +1,8 @@
 # Site settings
 title: Ihor Kovalyshyn
 description: 'Data Science Engineer'
-url: ''
-baseurl: '/home/'
+url: 'delta1epsilon.github.io'
+baseurl: '/'
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 

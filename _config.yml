@@ -4,7 +4,7 @@ description: 'Data Science Engineer'
 url: 'delta1epsilon.github.io'
 baseurl: '/'
 # google_analytics: 'UA-XXXXXX-X'
-# disqus_shortname: 'ihorkovalyshyn'
+disqus_shortname: 'delta1epsilon'
 
 author:
   name: 'Ihor Kovalyshyn'

@@ -19,7 +19,7 @@ I decided to write R package [logtime](https://github.com/delta1epsilon/logtime)
 
 ## Install
 
-```
+```r
 devtools::install_github('delta1epsilon/logtime')
 ```
 
@@ -32,7 +32,7 @@ logtime package consists of just five functions *log_time*, *log_message*, *crea
 
 The core function is `log_time` which enables logging and time tracking and makes code much more readable. Its usage:
 
-```
+```r
 log_time('message', level = 'DEBUG') %<% {
    # expression
 }
@@ -42,7 +42,7 @@ log_time('message', level = 'DEBUG') %<% {
 
 It evaluates an expression in calling environment. Uses pipe operator ```%<%``` which is inspired by pipe operators family introduced in [magrittr](https://github.com/smbache/magrittr) package. It allows nested calls. The call below will output execution time for all tree blocks
 
-```
+```r
 log_time('message', level = 'DEBUG') %<% {
     # expression 1
 
@@ -70,7 +70,7 @@ By default it has level DEBUG but the package supports DEBUG, INFO, WARNING and 
 
 `log_message` prints a log message with specified logging level. The usage is simple:
 
-```
+```r
 log_message('message', level = 'DEBUG')
 # 2016-10-12 12:36:46 - DEBUG - [message]
 ```
@@ -79,7 +79,7 @@ log_message('message', level = 'DEBUG')
 
 To have more control on different logging parts of the script `create_logger` function was designed. It has three arguments: logger name, logging level and optional file path or connection for writing logs to.
 
-```
+```r
 logger <- create_logger('name', level = 'INFO', file = "")
 ```
 
@@ -87,7 +87,7 @@ logger <- create_logger('name', level = 'INFO', file = "")
 
 And last but not least, `configure_logging` allows you to set overall threshold logging level for printing logs and to set file destination for writing logs. The usage is:
 
-```
+```r
 configure_logging(threshold_level = "INFO", output_file = "")
 ```
 
@@ -96,7 +96,7 @@ configure_logging(threshold_level = "INFO", output_file = "")
 
 Let's say I would like to logtime generating of random numbers.
 
-```
+```r
 log_time ('Generate random numbers') %<% {
 
     log_time ('Set 1') %<% {
@@ -124,14 +124,14 @@ log_time ('Generate random numbers') %<% {
 
 Or let's create a log with level 'WARNING' which tells that data frame is empty.
 
-```
+```r
 log_message('The data frame is empty', level = 'WARNING')
 # 2016-10-12 12:46:39 - WARNING - [The data frame is empty]
 ```
 
 Let's move on and create a logger called *clean_data* with default level INFO which will write all the logs to file *clean_data.log*.
 
-```
+```r
 clean_data_logger <- create_logger(name = 'clean_data',
                                    level = 'INFO',
                                    file = 'clean_data.log'
@@ -140,7 +140,7 @@ clean_data_logger <- create_logger(name = 'clean_data',
 
 And let's logtime some process in data cleaning procedure.
 
-```
+```r
 clean_data_logger$log_time ('Data cleaning step X') %<% {
     # some code
 }
@@ -155,7 +155,7 @@ By default the logger's `log_time` and `log_message` have level INFO and can be 
 
 Now let's create simple log with changed level to ERROR.
 
-```
+```r
 clean_data_logger$log_message('Something awful happened', level = 'ERROR')
 # goes to clean_data.log file:
 # 2016-10-12 12:50:55 - [clean_data] - ERROR - [Something awful happened]
@@ -163,13 +163,13 @@ clean_data_logger$log_message('Something awful happened', level = 'ERROR')
 
 To set the package for printing only logs with levels INFO and higher (namely INFO, WARNING and ERROR) we write:
 
-```
+```r
 configure_logging(threshold_level = 'INFO')
 ```
 
 To set the package for printing logs to *log.log* file with levels WARNING and higher we write:
 
-```
+```r
 configure_logging(threshold_level = 'WARNING', output_file = 'log.log')
 ```
 

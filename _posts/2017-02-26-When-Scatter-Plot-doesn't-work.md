@@ -50,29 +50,4 @@ ggplot() +
 The picture has changed a lot. Now we can see that there are a lot of (0, 0) samples (if to be precise - 30% of all samples) and two lines. Obviously we couldn't see those things on the scatter plot.
 
 
-And here's the code for generating the data set:
-
-
-``` r
-set.seed(2017)
-
-# (0, 0) samples
-x <- rep(0, 1000000)
-y <- rep(0, 1000000)
-
-# 2 lines
-line <- runif(500000, 0.5, 2)
-x <- c(x, line)
-y <- c(y, 4 - line)
-x <- c(x, line)
-y <- c(y, 2.5 - line)
-
-x <- c(x, rexp(1000000, rate = 2))
-y <- c(y, rexp(1000000))
-
-x <- c(x, runif(300000, 0, 6))
-y <- c(y, rexp(300000, 5))
-
-x <- c(x, rexp(30000, 6))
-y <- c(y, runif(30000, 0, 12))
-```
+You can check the code for generating the data set on my [github repo](https://github.com/delta1epsilon/when_scatter_plot_doesnt_work/blob/master/example.R).

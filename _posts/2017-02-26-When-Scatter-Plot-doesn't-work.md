@@ -14,6 +14,7 @@ So, here's a scatter plot of the generated two variables:
 
 ``` r
 library(ggplot2)
+library(viridis)
 
 ggplot() + 
     geom_point(aes(x = x, y = y), 
@@ -40,9 +41,11 @@ Here's an alternative to scatter plots. Let's try to use [Hex Bins](http://docs.
 ``` r
 ggplot() + 
     stat_binhex(aes(x = x, y = y)) +
-    scale_fill_gradient(low='white', high='red', trans = 'log10', 
-                        limits=c(1, 200000), name = 'log10(count)'
-                        )
+    scale_fill_gradientn(colours = viridis(256), 
+                         trans = 'log10', 
+                         limits=c(1, 200000),
+                         name = 'log10(count)'
+                         )
 ```
 
 ![](http://delta1epsilon.github.io/assets/hexbin.png)

@@ -21,7 +21,7 @@ ggplot() +
                colour = 'steelblue')
 ```
 
-![](http://delta1epsilon.github.io/assets/scatterplot1.png)
+![](https://delta1epsilon.github.io/assets/scatterplot1.png)
 
 We can see that overplotting issue. Let's try to change alpha to 0.1:
 
@@ -32,7 +32,7 @@ ggplot() +
                alpha = 0.1)
 ```
 
-![](http://delta1epsilon.github.io/assets/scatterplot2.png)
+![](https://delta1epsilon.github.io/assets/scatterplot2.png)
 
 Doesn't really help. So, a lot of people would have already made some wrong decisions about the relationship between the variables from these plots. However, let's continue experimenting with the visualization. 
 
@@ -48,7 +48,7 @@ ggplot() +
                          )
 ```
 
-![](http://delta1epsilon.github.io/assets/hexbin.png)
+![](https://delta1epsilon.github.io/assets/hexbin.png)
 
 The picture has changed a lot. Now we can see that there are a lot of (0, 0) samples (if to be precise - 30% of all samples) and two lines. Obviously we couldn't see those things on the scatter plot.
 

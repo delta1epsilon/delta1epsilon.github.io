@@ -1,7 +1,7 @@
 # Site settings
 title: Ihor Kovalyshyn
 description: 'Data Science Engineer'
-url: 'delta1epsilon.github.io'
+url: 'https://delta1epsilon.github.io'
 baseurl: '/'
 google_analytics: 'UA-91445583-1'
 disqus_shortname: 'delta1epsilon-github-io'
@@ -35,5 +35,5 @@ kramdown:
   # do not replace newlines by <br>s
   hard_wrap: false
 
-gems: ['jekyll-paginate']
+gems: ['jekyll-paginate', 'jekyll-paginate', 'jekyll-gist', 'jemoji', 'jekyll-email-protect', 'html-proofer']
 exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']

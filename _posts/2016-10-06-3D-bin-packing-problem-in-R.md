@@ -86,10 +86,6 @@ After some number of iterations through **Packing** -> **Evaluation** -> **Selec
 4. **Mutation probability** says how often will be parts of chromosome mutated.
 
 
-```
-x_1
-\mu
-```
 
 ## BoxPacking: R package for solving 3D bin packing problem
 

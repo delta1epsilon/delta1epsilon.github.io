@@ -79,7 +79,6 @@ It's done to prevent falling all solutions in the population into a local optimu
 
 After some number of iterations through **Packing** -> **Evaluation** -> **Selection** -> **Crossover**  return the best solution in last population.
 
-$x_1, x_2$
 
 ### Parameters
 

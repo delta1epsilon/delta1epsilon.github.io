@@ -3,6 +3,7 @@ title:  "3D bin packing problem in R"
 date:   2016-10-06 15:04:23
 categories: [R, 3D bin packing problem, Genetic Algorithm]
 tags: [R, 3D bin packing problem, Genetic Algorithm]
+mathjax: true
 ---
 First of all, let's define what does "3D bin packing problem" (3DBPP) stand for.
 In 3DBPP rectangular boxes must be efficiently orthogonally packed into containers (bins). Packing is said to be efficient if it's done in a way that maximizes containers utilization ratio.
@@ -77,6 +78,8 @@ It's done to prevent falling all solutions in the population into a local optimu
 ### End
 
 After some number of iterations through **Packing** -> **Evaluation** -> **Selection** -> **Crossover**  return the best solution in last population.
+
+$x_1, x_2$
 
 ### Parameters
 

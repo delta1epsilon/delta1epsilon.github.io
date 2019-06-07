@@ -29,7 +29,7 @@ It’s always a good idea to visualize your data. t-SNE might be used for visual
 
 It’s kind of intuitive that gathering more features might provide new information. However, at the same time it can cause severe problems. What are the challenges that high-dimensional data presents?
 
-Many of the dimensions are often irrelevant and clusters may exist only in some subspaces. Clusters can be spread out across irrelevant dimensions, which can confuse traditional clustering algorithms. So, if you consider all the dimensions, you may no be able to find meaningful clusters. A nice example of such case is described in the [paper](https://www.kdd.org/exploration_files/parsons.pdf).
+Many of the dimensions are often irrelevant and clusters may exist only in some subspaces. Clusters can be spread out across irrelevant dimensions, which can confuse traditional clustering algorithms. So, if you consider all the dimensions, you may no be able to find meaningful clusters. A nice example of such case is described in the [paper](https://www.kdd.org/exploration_files/parsons.pdf) [1].
 
 ![](https://delta1epsilon.github.io/assets/gotchas_w_clustering/high_dimension_clustering_1.png)
 
@@ -39,7 +39,7 @@ Many of the dimensions are often irrelevant and clusters may exist only in some 
 #TODO: briefly describe the example
 
 
-Curse of dimensionality is named to be the biggest problem in machine learning after overfitting [^fn2]. As the number of dimensions increase, the data becomes more sparse and distance measure becomes increasingly meaningless. Points in very high dimensions tend to be equidistant from each other. [reference number for https://www.kdd.org/exploration_files/parsons.pdf, Figure 1] provides an example of how additional dimensions spread out the points - see the figure below (the dataset is a sample of 20 points from uniform distribution between 0 and 2 in each of three dimensions).
+Curse of dimensionality is named to be the biggest problem in machine learning after overfitting [2]. As the number of dimensions increase, the data becomes more sparse and distance measure becomes increasingly meaningless. Points in very high dimensions tend to be equidistant from each other. [reference number for https://www.kdd.org/exploration_files/parsons.pdf, Figure 1] provides an example of how additional dimensions spread out the points - see the figure below (the dataset is a sample of 20 points from uniform distribution between 0 and 2 in each of three dimensions).
 
 
 ![](https://delta1epsilon.github.io/assets/gotchas_w_clustering/high_dimension_sparcity.png)
@@ -123,9 +123,9 @@ Note that such clustering quality measures are just heuristics, it doesn’t gua
 
 ## References
 
-* [^fn1]: L. Parsons, E. Haque, H Liu. Subspace Clustering for High Dimensional Data: A Review [https://www.kdd.org/exploration_files/parsons.pdf](https://www.kdd.org/exploration_files/parsons.pdf)
+[1]: L. Parsons, E. Haque, H Liu. Subspace Clustering for High Dimensional Data: A Review [https://www.kdd.org/exploration_files/parsons.pdf](https://www.kdd.org/exploration_files/parsons.pdf)
 
-* [^fn2]: Section "Intuition fails in high dimensions" in paper "A Few Useful Things to Know about Machine Learning" by Pedro Domingos [https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf](https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf)
+[2]: Section "Intuition fails in high dimensions" in paper "A Few Useful Things to Know about Machine Learning" by Pedro Domingos [https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf](https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf)
 
 
 

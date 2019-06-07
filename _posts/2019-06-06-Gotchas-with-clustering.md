@@ -123,9 +123,9 @@ Note that such clustering quality measures are just heuristics, it doesn’t gua
 
 ## References
 
-[^fn1]: Subspace Clustering for High Dimensional Data: A Review [https://www.kdd.org/exploration_files/parsons.pdf](https://www.kdd.org/exploration_files/parsons.pdf)
+* [^fn1]: L. Parsons, E. Haque, H Liu. Subspace Clustering for High Dimensional Data: A Review [https://www.kdd.org/exploration_files/parsons.pdf](https://www.kdd.org/exploration_files/parsons.pdf)
 
-[^fn2]: section "Intuition fails in high dimensions" in paper "A Few Useful Things to Know about Machine Learning" by Pedro Domingos [https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf](https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf)
+* [^fn2]: Section "Intuition fails in high dimensions" in paper "A Few Useful Things to Know about Machine Learning" by Pedro Domingos [https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf](https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf)
 
 
 

@@ -19,8 +19,7 @@ Clustering is meaningful only if there’s some non-random structure in a datase
 
 It’s always a good idea to visualize your data. t-SNE might be used for visualizing high-dimensional data. The figure below shows t-SNE embeddings for one of my datasets used for clustering - we can conclude that there’re some structures in the datasets and can try applying clustering to identify and analyze them.
 
-![](https://delta1epsilon.github.io/assets/gotchas_w_clustering/tsne_embeddings.png)
-
+<p style="text-align:center;"><img src="https://delta1epsilon.github.io/assets/gotchas_w_clustering/tsne_embeddings.png"></p>
 
 
 
@@ -32,7 +31,7 @@ It’s kind of intuitive that gathering more features might provide new informat
 Many of the dimensions are often irrelevant and clusters may exist only in some subspaces. Clusters can be spread out across irrelevant dimensions, which can confuse traditional clustering algorithms. So, if you consider all the dimensions, you may no be able to find meaningful clusters. A nice example of such case is described in paper [Subspace Clustering
 for High Dimensional Data: A Review](https://www.kdd.org/exploration_files/parsons.pdf). Four clusters were generated, each existing in only two of the three dimensions - see the figure below.
 
-![](https://delta1epsilon.github.io/assets/gotchas_w_clustering/high_dimension_clustering_1.png)
+<p style="text-align:center;"><img src="https://delta1epsilon.github.io/assets/gotchas_w_clustering/high_dimension_clustering_1.png"></p>
 
 The red and green clusters were generated in dimensions `a` and `b`, while blue and purple clusters were generated in dimensions `b` and `c` - it can be observed in the corresponding dimensions:
 
@@ -41,7 +40,7 @@ The red and green clusters were generated in dimensions `a` and `b`, while blue 
 When K-Means is used on this example - it does a poor job, since each cluster is spread across some irrelevant dimension. So, in order to identify each of the clusters in this dataset, we have to look for it in the appropriate subspaces.
 
 
-Another problem that high-dimensional data presents is a [Curse of dimensionality](https://en.wikipedia.org/wiki/Curse_of_dimensionality). Curse of dimensionality is named to be the biggest problem in machine learning after overfitting[^1]. As the number of dimensions increase, the data becomes more sparse and distance measure becomes increasingly meaningless. Points in very high dimensions tend to be equidistant from each other. 
+Another problem that high-dimensional data presents is a [Curse of dimensionality](https://en.wikipedia.org/wiki/Curse_of_dimensionality). Curse of dimensionality is named to be the biggest problem in machine learning after overfitting<sup>[1](#ftn1)</sup>. As the number of dimensions increase, the data becomes more sparse and distance measure becomes increasingly meaningless. Points in very high dimensions tend to be equidistant from each other. 
 
 Paper [Subspace Clustering
 for High Dimensional Data: A Review](https://www.kdd.org/exploration_files/parsons.pdf) provides an example of how additional dimensions spread out the points - see the figure below. The dataset is a sample of 20 points from uniform distribution between 0 and 2 in each of three dimensions.
@@ -143,7 +142,7 @@ Note that such clustering quality measures are just heuristics, it doesn’t gua
 
 ---
 
-[^1]: Section "Intuition fails in high dimensions" in paper "A Few Useful Things to Know about Machine Learning" by Pedro Domingos [https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf](https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf)
+<a name="ftn1">1</a>: Section "Intuition fails in high dimensions" in paper "A Few Useful Things to Know about Machine Learning" by Pedro Domingos [https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf](https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf)
 
 
 
